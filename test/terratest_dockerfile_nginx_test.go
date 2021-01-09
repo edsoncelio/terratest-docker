@@ -15,8 +15,8 @@ func TestDockerfileNginx(t *testing.T) {
 
 	docker.Build(t, "../Dockerfile/terratest-nginx/", buildOptions)
 
-	opts := &docker.RunOptions{Command: []string{"cat", "/usr/share/nginx/html/index.html"}}
+	opts := &docker.RunOptions{Command: []string{"date", "+'%Z'"}}
 	output := docker.Run(t, tag, opts)
-	assert.Equal(t, "Hello, Terratest!", output)
+	assert.Equal(t, "'UTC'", output)
 
 }
