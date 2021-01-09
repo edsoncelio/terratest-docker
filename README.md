@@ -9,5 +9,6 @@
 Inside the `/test` directory, run:   
 `go test -v -run <TEST_FUNCTION>`
 
-where, `TEST_FUNCTION` can be:
-* `TestDockerfileNginx`
+where `TEST_FUNCTION` can be (see `dockerfile_test`):
+* `TestImageAlpine`
+* `TestImageNginx`
