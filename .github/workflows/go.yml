@@ -17,9 +17,6 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.15
-      
-    - name: Step to test go mod
-      run: cd ./test; go mod download
   
     - name: Run the Tests
       run: cd ./test; go mod tidy; go test -v 
