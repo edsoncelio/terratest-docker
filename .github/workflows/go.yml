@@ -18,11 +18,8 @@ jobs:
       with:
         go-version: 1.15
       
-    - name: Build
-      run: go build ./test/
-    
     - name: Step to test go mod
       run: go mod download ./test/
-
+  
     - name: Run the Tests
       run: go test -v ./test/
