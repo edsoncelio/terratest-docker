@@ -19,7 +19,7 @@ jobs:
         go-version: 1.15
       
     - name: Step to test go mod
-      run: go mod download ./test/
+      run: cd ./test; go mod download
   
     - name: Run the Tests
       run: go test -v ./test/
