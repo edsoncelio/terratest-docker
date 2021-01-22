@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-ARG TZ='America/Fortaleza'
+ARG TZ='Africa/Cairo'
 
 ENV DEFAULT_TZ ${TZ}
 
